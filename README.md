@@ -3,26 +3,9 @@
 <!-- Project header -->
 <br/>
 <div style="text-align: center;">
-<h3>EDEN</h3>
-  <p>
-    Encode Decode ENgine
-    <br/>
-    <a href="https://github.com/qrohan74/eden.git"><strong>Explore the docs »</strong></a>
-    <br/>
-  </p>
+  <h3>EDEN</h3>
+  Encode Decode ENgine<br/>
 </div>
-
-<!-- Table of contents -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#changelog">Changelog</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
 
 <!-- About the project -->
 ## About The Project

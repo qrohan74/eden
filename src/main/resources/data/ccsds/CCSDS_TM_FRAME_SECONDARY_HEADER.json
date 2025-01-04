@@ -1,0 +1,31 @@
+{
+	"name": "CcsdsTmFrameSecondaryHeader",
+	"type": "container",
+	"description": "TM transfer frame (CCSDS 132.0-B-3) - Transfer Frame Secondary Header (up to 64 octets)",
+	"fields": [
+		{
+			"name": "secondaryHeaderId",
+			"description": "Transfer Frame Secondary Header ID (1 octet, mandatory)",
+			"type": "container",
+			"fields": [
+				{
+					"name": "versionNumber",
+					"description": "Transfer Frame Secondary Header Version Number (2 bits, mandatory)",
+					"type": "parameter",
+					"length": 2
+				},
+				{
+					"name": "headerLength",
+					"description": "Transfer Frame Secondary Header Length (6 bits, mandatory)",
+					"type": "parameter",
+					"length": 6
+				}
+			]
+		},
+		{
+			"name": "secondaryHeaderDataField",
+			"description": "Transfer Frame Secondary Header Data Field (up to 63 octets, optional)",
+			"type": "buffer"
+		}
+	]
+}

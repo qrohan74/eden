@@ -1,0 +1,12 @@
+{
+	"name": "CcsdsSecurityTrailer",
+	"type": "container",
+	"description": "Space Data Link Security Protocol (CCSDS 355.0-B-2) - Security Trailer",
+	"fields": [
+		{
+			"name": "messageAuthenticationCode",
+			"description": "Message Authentication Code (i.e. MAC; Optional)",
+			"type": "buffer"
+		}
+	]
+}

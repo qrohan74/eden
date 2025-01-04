@@ -1,0 +1,42 @@
+{
+	"name": "SpwCcsdsPacket",
+	"type": "container",
+	"description": "CCSDS packet transfer protocol (ECSS-E-ST-50-53C) - CCSDS Packet Transfer",
+	"fields": [
+		{
+			"name": "targetSpacewireAddress",
+			"description": "Target SpaceWire Address",
+			"type": "buffer"
+		},
+		{
+			"name": "targetLogicalAddress",
+			"description": "Target Logical Address (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "protocolIdentifier",
+			"description": "Protocol Identifier (8 bits)",
+			"type": "parameter",
+			"length": 8,
+			"default": "0x2"
+		},
+		{
+			"name": "reserved",
+			"description": "Reserved (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "userApplication",
+			"description": "User Application (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "ccsdsPacket",
+			"description": "CCSDS Packet",
+			"type": "buffer"
+		}
+	]
+}

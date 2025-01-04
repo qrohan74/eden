@@ -1,0 +1,63 @@
+{
+	"name": "CcsdsPacketPrimaryHeader",
+	"type": "container",
+	"description": "Space Packet Protocol (CCSDS 133.0-B-2) - Packet Primary Header",
+	"fields": [
+		{
+			"name": "packetVersionNumber",
+			"description": "Packet Version Number (3 bits, mandatory)",
+			"type": "parameter",
+			"length": 3
+		},
+		{
+			"name": "packetIdentificationId",
+			"type": "container",
+			"description": "Packet Identification Field (13 bits, mandatory)",
+			"fields": [
+				{
+					"name": "packetType",
+					"description": "Packet Type (1 bit, mandatory)",
+					"type": "parameter",
+					"length": 1
+				},
+				{
+					"name": "secondaryHeaderFlag",
+					"description": "Secondary Header Flag (1 bit, mandatory)",
+					"type": "parameter",
+					"length": 1
+				},
+				{
+					"name": "applicationProcessIdentifier",
+					"description": "APID (11 bits, mandatory)",
+					"type": "parameter",
+					"length": 11
+				}
+			]
+		},
+		{
+			"name": "packetSequenceControl",
+			"type": "container",
+			"description": "Packet Sequence Control (2 octets)",
+			"fields": [
+				{
+					"name": "sequenceFlags",
+					"description": "Sequence Flags (2 bits, mandatory)",
+					"type": "parameter",
+					"length": 2
+				},
+				{
+					"name": "packetSequenceCount",
+					"description": "Packet Sequence Count or Packet Name (14 bits, mandatory)",
+					"type": "parameter",
+					"length": 14
+				}
+			]
+		},
+		{
+			"name": "packetDataLength",
+			"description": "Packet Data Length (2 octets, mandatory)",
+			"type": "parameter",
+			"length": 16
+		}
+	]
+}

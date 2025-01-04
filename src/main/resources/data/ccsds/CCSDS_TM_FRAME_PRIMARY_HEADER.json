@@ -1,0 +1,49 @@
+{
+	"name": "CcsdsTmFramePrimaryHeader",
+	"type": "container",
+	"description": "TM transfer frame (CCSDS 132.0-B-3) - Transfer Frame Primary Header (6 octets)",
+	"fields": [
+		{
+			"name": "frameVersionNumber",
+			"description": "Transfer, Frame Version Number (2 bits, mandatory)",
+			"type": "parameter",
+			"length": 2
+		},
+		{
+			"name": "spacecraftId",
+			"description": "Spacecraft Identifier (10 bits, mandatory)",
+			"type": "parameter",
+			"length": 10
+		},
+		{
+			"name": "virtualChannelId",
+			"description": "Virtual Channel Identifier (6 bits, mandatory)",
+			"type": "parameter",
+			"length": 3
+		},
+		{
+			"name": "operationalControlFieldFlag",
+			"description": "Operational Control Field Flag (1 bit, mandatory)",
+			"type": "parameter",
+			"length": 1
+		},
+		{
+			"name": "masterChannelFrameCount",
+			"description": "Master Channel Frame Count (1 octet, mandatory)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "virtualChannelFrameCount",
+			"description": "Virtual Channel Frame Count (1 octet, mandatory)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "transferFrameDataFieldStatus",
+			"description": "Transfer Frame Data Field Status (2 octets, mandatory)",
+			"type": "parameter",
+			"length": 16
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "CcsdsPacketDataField",
+	"type": "container",
+	"description": "Space Packet Protocol (CCSDS 133.0-B-2) - Packet Data Field",
+	"fields": [
+		{
+			"name": "packetSecondaryHeader",
+			"type": "container",
+			"description": "Packet Secondary Header",
+			"fields": [
+				{
+					"name": "timeCodeField",
+					"description": "Time Code Field (variable length)",
+					"type": "buffer"
+				},
+				{
+					"name": "ancillaryDataField",
+					"description": "Ancillary Data Field (variable length)",
+					"type": "buffer"
+				}
+			]
+		},
+		{
+			"name": "userDataField",
+			"description": "User Data Field",
+			"type": "buffer"
+		}
+	]
+}

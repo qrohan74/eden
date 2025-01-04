@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/FML/1.0.1"
+      xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+
+      title="Frequently Asked Questions"
+      toplink="false">
+
+    <part id="general">
+        <title>General</title>
+        <faq id="how-x">
+            <question>
+                How to create a class for my packet?
+            </question>
+            <answer>
+                <p>Please refer the <a href="usage.html">usage</a> page.</p>
+            </answer>
+        </faq>
+    </part>
+    <part id="dev">
+        <title>Dev</title>
+        <faq id="new-class">
+            <question>
+                How to add a new class to the built-in classes?
+            </question>
+            <answer>
+                <p>The project comes with a set of built-in classes (available in the package <code>qrohan.eden.com</code>, e.g. for TMTC, Spacewire, etc.)</p>
+                <p>As a developer, you may want to add some new classes for the user.</p>
+                <ol>
+                  <li>Add your JSON files to the directory: src/main/resources/data</li>
+                  <li>Update the following test: test/java/qrohan/eden/core/tools/factory/FactoryTest.java in order to include your files to the generation.</li>
+                  <li>Run the non regression tests ('mvn test')</li>
+                  <li>Copy the generated classes to package <code>qrohan.eden.com</code></li>
+                  <li>Now that the classes are in the sources, run the tests and the site generation (mvn clean test site) to verify the compilation and the javadoc of your new classes</li>
+                </ol>
+            </answer>
+        </faq>
+    </part>
+</faqs>

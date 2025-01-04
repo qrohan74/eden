@@ -1,0 +1,127 @@
+{
+	"name": "SpwRmapReadReply",
+	"type": "container",
+	"description": "Remote memory access protocol (ECSS-E-ST-50-52C) - Read Reply",
+	"fields": [
+		{
+			"name": "replySpacewireAddress",
+			"description": "Reply SpaceWire Address",
+			"type": "buffer"
+		},
+		{
+			"name": "initiatorLogicalAddress",
+			"description": "Initiator Logical Address (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "protocolIdentifier",
+			"description": "Protocol Identifier (8 bits)",
+			"type": "parameter",
+			"length": 8,
+			"default": "0x1"
+		},
+		{
+			"name": "instruction",
+			"description": "Instruction (8 bits)",
+			"type": "container",
+			"fields": [
+				{
+					"name": "packetType",
+					"description": "Packet Type (2 bits)",
+					"type": "parameter",
+					"length": 2,
+					"default": 0
+				},
+				{
+					"name": "command",
+					"description": "Command type (4 bits)",
+					"type": "container",
+					"fields": [
+						{
+							"name": "writeRead",
+							"description": "Write (1) / Read (0) (1 bit)",
+							"type": "parameter",
+							"length": 1,
+							"default": 0
+						},
+						{
+							"name": "verify",
+							"description": "Verify data, i.e. verify data before write (1) / Don’t Verify (0) (1 bit)",
+							"type": "parameter",
+							"length": 1,
+							"default": 0
+						},
+						{
+							"name": "reply",
+							"description": "Reply (1) / No reply (0) (1 bit)",
+							"type": "parameter",
+							"length": 1,
+							"default": 1
+						},
+						{
+							"name": "increment",
+							"description": "Increment address (1) / No inc (0) (1 bit)",
+							"type": "parameter",
+							"length": 1
+						}
+					]
+				},
+				{
+					"name": "replyAddressLength",
+					"description": "Reply Address Length (0b00 = 0 byte, 0b01 = 4 bytes, 0b10 = 8 bytes, 0b11 = 12 bytes) (2 bits)",
+					"type": "parameter",
+					"length": 2,
+					"default": 1
+				}
+			]
+		},
+		{
+			"name": "status",
+			"description": "Status (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "targetLogicalAddress",
+			"description": "Target Logical Address (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "transactionIdentifier",
+			"description": "Transaction Identifier (MSB first) (16 bits)",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "reserved",
+			"description": "Reserved (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "dataLength",
+			"description": "Data Length (length in bytes of the data field, MSB first) (24 bits)",
+			"type": "parameter",
+			"length": 24
+		},
+		{
+			"name": "headerCrc",
+			"description": "Header CRC (8 bits)",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "data",
+			"description": "Data field",
+			"type": "buffer"
+		},
+		{
+			"name": "dataCrc",
+			"description": "Data CRC (8 bits)",
+			"type": "parameter",
+			"length": 8
+		}
+	]
+}

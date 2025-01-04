@@ -1,0 +1,26 @@
+{
+	"name": "STREAM_CONTAINER",
+	"type": "container",
+	"description": "Example STREAM object with simple nested containers",
+	"fields": [
+		{
+			"name": "param1",
+			"description": "this is parameter 1",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "cont1",
+			"description": "this is container 1",
+			"type": "container",
+			"fields": [
+			]
+		},
+		{
+			"name": "param6",
+			"description": "this is parameter 6",
+			"type": "parameter",
+			"length": 16
+		}
+	]
+}

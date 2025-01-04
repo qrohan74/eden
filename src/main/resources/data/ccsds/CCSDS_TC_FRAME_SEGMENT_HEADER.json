@@ -1,0 +1,19 @@
+{
+	"name": "CcsdsTcSegmentHeader",
+	"type": "container",
+	"description": "TC transfer frame (CCSDS 232.0-B-4) - Segment Header (1 octet, optional)",
+	"fields": [
+		{
+			"name": "sequenceFlags",
+			"description": "Sequence Flags",
+			"type": "parameter",
+			"length": 2
+		},
+		{
+			"name": "multiplexerAccessPointId",
+			"description": "Multiplexer Access Point ID",
+			"type": "parameter",
+			"length": 6
+		}
+	]
+}

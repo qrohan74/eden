@@ -1,0 +1,15 @@
+{
+	"static": {
+		"name": "CcsdsFrameSlds",
+		"type": "container",
+		"description": "example",
+		"fields": [
+			{
+				"ref": "../CCSDS_FRAME_SECURITY_HEADER.json"
+			},
+			{
+				"ref": "../CCSDS_FRAME_SECURITY_TRAILER.json"
+			}
+		]
+	}
+}

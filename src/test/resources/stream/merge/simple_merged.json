@@ -1,0 +1,19 @@
+{
+	"name": "cont2",
+	"description": "Example of simple container",
+	"type": "container",
+	"fields": [
+		{
+			"name": "param3",
+			"description": "this is param3",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "param4",
+			"description": "this is param4",
+			"type": "parameter",
+			"length": 16
+		}
+	]
+}

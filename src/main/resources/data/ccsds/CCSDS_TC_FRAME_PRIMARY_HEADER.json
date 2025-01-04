@@ -1,0 +1,55 @@
+{
+	"name": "CcsdsTcFramePrimaryHeader",
+	"type": "container",
+	"description": "TC transfer frame (CCSDS 232.0-B-4) - Transfer Frame Header (5 octets, mandatory)",
+	"fields": [
+		{
+			"name": "frameVersionNumber",
+			"description": "Transfer, Frame Version Number (2 bits, mandatory)",
+			"type": "parameter",
+			"length": 2
+		},
+		{
+			"name": "bypassFlag",
+			"description": "Bypass Flag (1 bit, mandatory)",
+			"type": "parameter",
+			"length": 1
+		},
+		{
+			"name": "controlCommandFlag",
+			"description": "Control Command Flag (1 bit, mandatory)",
+			"type": "parameter",
+			"length": 1
+		},
+		{
+			"name": "spare",
+			"description": "Reserved Spare (2 bits, mandatory)",
+			"type": "parameter",
+			"length": 2
+		},
+		{
+			"name": "spacecraftId",
+			"description": "Spacecraft Identifier (10 bits, mandatory)",
+			"type": "parameter",
+			"length": 10
+		},
+		{
+			"name": "virtualChannelId",
+			"description": "Virtual Channel Identifier (6 bits, mandatory)",
+			"type": "parameter",
+			"length": 6
+		},
+		{
+			"name": "frameLength",
+			"description": "Frame Length (10 bits, mandatory)",
+			"type": "parameter",
+			"length": 10
+		},
+		{
+			"name": "frameSequenceNumber",
+			"description": "Frame Sequence Number (8 bits, mandatory)",
+			"type": "parameter",
+			"length": 8
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "STREAM_PARAMETER",
+	"type": "unknown",
+	"description": "Example STREAM object with simple scalar parameters",
+	"fields": [
+		{
+			"name": "param1",
+			"description": "this is param1",
+			"type": "parameter",
+			"length": 8
+		},
+		{
+			"name": "param2",
+			"description": "this is param2",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "param3",
+			"description": "this is param3",
+			"type": "parameter",
+			"length": 32
+		}
+	]
+}

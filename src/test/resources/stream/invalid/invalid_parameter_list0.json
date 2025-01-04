@@ -1,0 +1,33 @@
+{
+	"name": "STREAM_PARAMETER_LIST",
+	"type": "container",
+	"description": "Example STREAM object with nested list of parameters",
+	"fields": [
+		{
+			"name": "param1",
+			"description": "this is param1",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "param2",
+			"description": "this is param2",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "param3",
+			"description": "this is param3",
+			"type": "parameter",
+			"length": 32,
+			"multiplierOf": "param2"
+		},
+		{
+			"name": "param4",
+			"description": "this is param3",
+			"type": "parameter",
+			"length": 8,
+			"multipliedBy": "param3"
+		}
+	]
+}

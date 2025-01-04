@@ -1,0 +1,28 @@
+{
+	"name": "CcsdsSecurityHeader",
+	"type": "container",
+	"description": "Space Data Link Security Protocol (CCSDS 355.0-B-2) - Security Header",
+	"fields": [
+		{
+			"name": "securityParameterIndex",
+			"description": "Security Parameter Index (i.e. SPI, 16 bits; mandatory)",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "initializationVector",
+			"description": "Initialization Vector (octet-aligned, fixed-length; optional)",
+			"type": "buffer"
+		},
+		{
+			"name": "sequenceNumber",
+			"description": "Sequence Number (octet-aligned, fixed-length; optional)",
+			"type": "buffer"
+		},
+		{
+			"name": "padLength",
+			"description": "Pad Length (octet-aligned, fixed-length; optional)",
+			"type": "buffer"
+		}
+	]
+}

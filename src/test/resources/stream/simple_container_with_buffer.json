@@ -1,0 +1,29 @@
+{
+	"name": "simpleContainerWithBuffer",
+	"type": "container",
+	"description": "Example of simple container with some buffers",
+	"fields": [
+		{
+			"name": "param1",
+			"description": "this is param1",
+			"type": "parameter",
+			"length": 16
+		},
+		{
+			"name": "buffer1",
+			"description": "this is buffer1",
+			"type": "buffer"
+		},
+		{
+			"name": "buffer2",
+			"description": "this is buffer2",
+			"type": "buffer"
+		},
+		{
+			"name": "param2",
+			"description": "this is param3",
+			"type": "parameter",
+			"length": 32
+		}
+	]
+}

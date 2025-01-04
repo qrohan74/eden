@@ -1,0 +1,6 @@
+{
+	"name": "simpleParameter",
+	"description": "Example of simple parameter",
+	"type": "parameter",
+	"length": 32
+}
